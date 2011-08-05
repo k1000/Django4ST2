@@ -1,6 +1,9 @@
 <!-- See http://www.sublimetext.com/docs/snippets for more information -->
 <snippet>
-    <content><![CDATA[${1:FIELDNAME} = models.DateTimeField(_("${1}"), ${2:auto_add=True,) ${3:auto_add_new=True,) ]]></content>
+    <content><![CDATA[${1:FIELDNAME} = models.DateTimeField(
+    _("${1}")
+    ${2:, auto_add=True) ${3:, auto_add_new=True)
+    ${2:, blank=True, null=True})]]></content>
     <tabTrigger>mdatetime</tabTrigger>
     <scope>source.python</scope>
     <description>DateTimeField (mdatetime)</description>
