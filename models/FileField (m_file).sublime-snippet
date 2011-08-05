@@ -1,6 +1,9 @@
 <!-- See http://www.sublimetext.com/docs/snippets for more information -->
 <snippet>
-    <content><![CDATA[${1:FIELDNAME} = models.FileField($2)]]></content>
+    <content><![CDATA[${1:FIELDNAME} = models.FileField(
+    _("${1}"),
+    upload_to="uploads/$2"${3:, 
+    blank=True, null=True,} )]]></content>
     <tabTrigger>mfile</tabTrigger>
     <scope>source.python</scope>
     <description>FileField (mfile)</description>
