@@ -1,6 +1,6 @@
 <!-- See http://www.sublimetext.com/docs/snippets for more information -->
 <snippet>
-    <content><![CDATA[${1:FIELDNAME} = models.TimeField($2)]]></content>
+    <content><![CDATA[${1:FIELDNAME} = models.TimeField(_("${1}"), ${2:blank=True, null=True,})]]></content>
     <tabTrigger>mtime</tabTrigger>
     <scope>source.python</scope>
     <description>TimeField (mtime)</description>
