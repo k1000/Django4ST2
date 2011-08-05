@@ -1,6 +1,6 @@
 <!-- See http://www.sublimetext.com/docs/snippets for more information -->
 <snippet>
-    <content><![CDATA[${1:FIELDNAME} = models.EmailField($2)]]></content>
+    <content><![CDATA[${1:FIELDNAME} = models.EmailField(_("${1}")${2:, blank=True, null=True})]]></content>
     <tabTrigger>memail</tabTrigger>
     <scope>source.python</scope>
     <description>EmailField (memail)</description>
