@@ -1,6 +1,11 @@
 <!-- See http://www.sublimetext.com/docs/snippets for more information -->
 <snippet>
-    <content><![CDATA[${1:FIELDNAME} = models.ManyToManyField($2)]]></content>
+    <content><![CDATA[${1:FIELDNAME} = models.ManyToManyField(
+    {2:RelModel}, 
+    verbose_name=_("${1}"),
+    related_name="related_${1}s",
+    ${3:blank=True, null=True,}
+    )]]></content>
     <tabTrigger>m2m</tabTrigger>
     <scope>source.python</scope>
     <description>ManyToManyField (m2m)</description>
